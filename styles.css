@@ -12,7 +12,6 @@ body {
     flex-direction: column;
     min-height: 100vh; 
     margin: 0;
-    overflow: hidden;
     margin: 0;
 }
 
@@ -22,7 +21,7 @@ body {
 
 button.primary {
     background-color: #3882F6;
-    color: white;
+    color: #F9FaF8;
     border: 1px solid #126af4;
     border-radius: 8px;
 }
@@ -31,9 +30,20 @@ button.primary:hover, button.primary:focus, button.primary:active {
     background-color: #126af4;
 }
 
+button.secondary {
+    background-color: transparent;
+    color: #F9FaF8;
+    border: 3px solid #F9FaF8;
+    border-radius: 8px;
+}
+
+button.secondary:hover, button.secondary:focus, button.secondary:active {
+    background-color: #126af4;
+}
+
 .header, .hero, .footer {
     background-color: #1F2937;
-    color: white;
+    color: #F9FaF8;
 }
 
 .header, .hero {
@@ -168,9 +178,57 @@ ul.nav {
 
 figure {
     background-color: #E5E7EB;
+    display: flex;
+    align-items: center;
+    min-height: 300px;
+}
+
+blockquote {
+    font-size: 36px;
+    font-weight: 200;
+    font-style: italic;
+    color: #1F2937;
+}
+
+figcaption {
+    font-size: 21px;
+    font-weight: 900;
+    color: #1F2937;
+    text-align: right;
+}
+
+.call-to-action {
+    display: flex;
+    align-items: center;
+    min-height: 300px;
+}
+
+.call-to-action .inner {
+    border-radius: 8px;
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 128px;
+}
+
+.call-to-action .left-content {
+    color: #F9FaF8;
+}
+
+.call-to-action button {
+    /* prevent button from stretching height to match left-content */
+    align-self: center;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 8px 16px; 
+    }
+
+.call-to-action h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
 }
 
 .footer {
     text-align: center;
-    padding: 8px 16px;
+    padding: 32px 16px;
 }
