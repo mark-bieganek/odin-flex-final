@@ -20,8 +20,8 @@ The Odin Project: this project page can be found at
     https://www.theodinproject.com/lessons/foundations-landing-page
 
 
-Images: Some free images used in this project are sourced from the
-amazing artists found on Unsplash.com.
+Images: A special thanks to these artists, whom provided the images
+used in this project.
 
   - Alex Boyd https://unsplash.com/@a_g_b
 
@@ -32,5 +32,7 @@ amazing artists found on Unsplash.com.
   - Chris Henry https://unsplash.com/@chrishenryphoto
 
   - Elisha Mariathas https://unsplash.com/@emariathas
+
+  - ItalianLadybug https://pixabay.com/users/italianladybug-27190605/
 
   - Lucas Ludwig https://unsplash.com/@luddyphoto
