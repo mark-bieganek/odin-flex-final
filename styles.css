@@ -1,21 +1,31 @@
-html {
-    min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    flex: 1;
 }
 
 button.primary {
     background-color: #3882F6;
     color: white;
     border: 1px solid #126af4;
-    border-radius: 4px;
+    border-radius: 8px;
 }
-
 
 button.primary:hover, button.primary:focus, button.primary:active {
     background-color: #126af4;
@@ -26,11 +36,37 @@ button.primary:hover, button.primary:focus, button.primary:active {
     color: white;
 }
 
-.header {
+.header, .hero {
+    display: flex;
+    justify-content: center;
+    padding: 8px 16px;
+}
+
+.header, .hero {
+    flex: 0;
+}
+
+.content, .quote, .call-to-action {
+    flex: 1;
+}
+
+.inner {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header .inner {
     display: flex;
     justify-content: space-between;
-    padding: 8px 16px;
     align-items: center;
+}
+
+.hero .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
 }
 
 .logo {
@@ -42,6 +78,9 @@ button.primary:hover, button.primary:focus, button.primary:active {
 .logo h1 {
     margin: 0;
     padding: 0;
+    font-family: 'Damion', cursive;
+    font-weight: 400;
+    color: #F9FaF8;
 }
 
 .logo img {
@@ -59,34 +98,55 @@ ul.nav {
     list-style-type: none;
 }
 
+.nav li a {
+    color: #F9FaF8;
+    text-decoration: none;
+    font-size: 18px;
+}
+
 .hero {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+    padding-bottom: 48px;
+}
+
+.hero .left-content {
+    max-width: 700px;
 }
 
 .hero h1 {
     margin: 0;
     padding: 0;
-    font-size: 112px;
+    font-size: 72px;
+    font-weight: 900;
+    color: #F9FaF8;
+    margin-bottom: 2rem;
 }
 
 .hero button {
-    font-size:24px;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 8px 16px; 
 }
 
 .hero img {
     height: 500px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 16px;
+}
+
 .content h1 {
     text-align: center;
+    margin-bottom: 16px;
 }
 
 .gallery {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 32px;
     flex-wrap: wrap;
 }
 
@@ -97,7 +157,13 @@ ul.nav {
 }
 
 .item img {
+    flex-basis: auto;
     max-height: 300px;
+    border-radius: 8px;
+}
+
+.item .caption {
+    padding: 8px 16px;
 }
 
 figure {
@@ -105,5 +171,6 @@ figure {
 }
 
 .footer {
-    
+    text-align: center;
+    padding: 8px 16px;
 }
